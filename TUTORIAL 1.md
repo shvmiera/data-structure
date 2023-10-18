@@ -21,9 +21,9 @@
 10. You can use System.out.println() only in the main() method ( T / F )\
     False.
 ### Question 2
-The following codes are taken from a Java file/program called Tutorial1.java.  Only the codes inside the main() method and the output are given. Without changing the codes inside the main() method, write a suitable class so you may build the program and generate the intended output correctly and in order.\
+The following codes are taken from a Java file/program called Tutorial1.java.  Only the codes inside the main() method and the output are given. Without changing the codes inside the main() method, write a suitable class so you may build the program and generate the intended output correctly and in order.
 
-public class Tutorial1 {
+public class Tutorial1 {\
 	public static void main(String[] args){
 
 	// Create an object for class Person 
