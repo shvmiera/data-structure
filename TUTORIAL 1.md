@@ -40,8 +40,8 @@ public class Tutorial1 {
 	System.out.println(person1.name);
 	System.out.println(person2.age);
 	}
-}\
+}
 
 Output:
-Jack Sparrow
+Jack Sparrow\
 45
