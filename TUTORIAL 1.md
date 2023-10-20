@@ -47,8 +47,8 @@ Output:\
 Jack Sparrow\
 45
 
-**ANSWER**\
-public class Person {
+**ANSWER**
+class Person {
 String name;\
 int age;\
 }
@@ -92,48 +92,48 @@ I am retiring in 15 years.
 **ANSWER**\
 class Person {\
     
-    String name;\
-    int age;\
+    String name;
+    int age;
     
-    Person (String name, int age) {\
-        this.name = name;\
-        this.age = age;\
-    }\
-    
-    public String sayHello () {\
-        return "This is your Captain " + this.name + " saying Oh-hoyyy!";\
-    }\
-   
-    public String speak () {\
-        return "I am " + this.name + ", " + this.age + " years old this year mate.";\
-    }\
-        
-    public int retirement () {\
-        return 60 - this.age;\
-    }\
-     
-    public String calculateYearsToRetirement () {\
-        int yearstoretire = retirement(); // calling the method retirement()\
-        return "I am retiring in " + yearstoretire + " years";\
-    }\
-    
-}\
+    Person (String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-public class Tutorial1 {\
-    public static void main(String[] args) {\
+    public String sayHello () {
+        return "This is your Captain " + this.name + " saying Oh-hoyyy!";
+    }
+   
+    public String speak () {
+        return "I am " + this.name + ", " + this.age + " years old this year mate.";
+    }
         
-        // Create an object for class Person\
-	Person person1 = new Person("Jack Sparrow", 38);\
-	// Create a second object for class Person\
-	Person person2 = new Person("Katy Perry", 45);\
+    public int retirement () {
+        return 60 - this.age;
+    }
+     
+    public String calculateYearsToRetirement () {
+        int yearstoretire = retirement(); // calling the method retirement()
+        return "I am retiring in " + yearstoretire + " years";
+    }
+    
+}
+
+public class Tutorial1 {
+    public static void main(String[] args) {
+        
+        // Create an object for class Person
+	Person person1 = new Person("Jack Sparrow", 38);
+	// Create a second object for class Person
+	Person person2 = new Person("Katy Perry", 45);
 	
-	// Display\
-        System.out.println(person1.sayHello());\
-        System.out.println(person2.sayHello());\
+	// Display
+        System.out.println(person1.sayHello());
+        System.out.println(person2.sayHello());
         System.out.println(person1.speak());
-        System.out.println(person1.calculateYearsToRetirement());\
-        System.out.println(person2.speak());\
-        System.out.println(person2.calculateYearsToRetirement());\
+        System.out.println(person1.calculateYearsToRetirement());
+        System.out.println(person2.speak());
+        System.out.println(person2.calculateYearsToRetirement());
         
-    }\
-}\
+    }
+}
