@@ -47,7 +47,7 @@ Output:\
 Jack Sparrow\
 45
 
-**ANSWER**
+**ANSWER**\
 class Person {\
 String name;\
 int age;\
@@ -119,10 +119,10 @@ class Person {
     
 }
 
-public class Tutorial1 {
+public class Tutorial1 {\
     public static void main(String[] args) {
         
-        // Create an object for class Person
+	// Create an object for class Person
 	Person person1 = new Person("Jack Sparrow", 38);
 	// Create a second object for class Person
 	Person person2 = new Person("Katy Perry", 45);
