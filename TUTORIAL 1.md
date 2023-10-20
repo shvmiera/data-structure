@@ -48,7 +48,7 @@ Jack Sparrow\
 45
 
 **ANSWER**
-class Person {
+class Person {\
 String name;\
 int age;\
 }
@@ -56,7 +56,7 @@ int age;\
 ### Question 3
 Extend Tutorial1.java with additional information to the class person.
 
-public class Tutorial1 {
+public class Tutorial1 {\
 	public static void main(String[] args){
 
 	// Create a Person object using the Person class
