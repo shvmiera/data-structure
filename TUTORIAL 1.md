@@ -54,7 +54,7 @@ int age;\
 }
 
 ### Question 3
-Extend Tutorial1.java with additional information to the class person.\
+Extend Tutorial1.java with additional information to the class person.
 
 public class Tutorial1 {
 	public static void main(String[] args){
@@ -90,7 +90,7 @@ I am Katy Perry, 45 years old this year mate.\
 I am retiring in 15 years.
 
 **ANSWER**\
-class Person {\
+class Person {
     
     String name;
     int age;
