@@ -47,8 +47,8 @@ Output:\
 Jack Sparrow\
 45
 
-**ANSWER**\\
-public class Person {\
+**ANSWER**\
+public class Person {
 String name;\
 int age;\
 }
