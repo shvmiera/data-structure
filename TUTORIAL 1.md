@@ -1,5 +1,5 @@
 # Tutorial 1 
-### Question 1
+## Question 1
 1. Each Java file/program must have one public class ( T / F )\
    True.
 2. Each Java file/program can have as many non-public classes as you wish ( T / F )\
@@ -21,7 +21,7 @@
 10. You can use System.out.println() only in the main() method ( T / F )\
     False.
     
-### Question 2
+## Question 2
 The following codes are taken from a Java file/program called Tutorial1.java.  Only the codes inside the main() method and the output are given. Without changing the codes inside the main() method, write a suitable class so you may build the program and generate the intended output correctly and in order.
 
 public class Tutorial1 {\
@@ -47,13 +47,15 @@ Output:\
 Jack Sparrow\
 45
 
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
 **ANSWER**\
 class Person {\
 String name;\
 int age;\
-}
+}\
+◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
 
-### Question 3
+## Question 3
 Extend Tutorial1.java with additional information to the class person.
 
 public class Tutorial1 {\
@@ -89,8 +91,8 @@ I am retiring in 22 years.\
 I am Katy Perry, 45 years old this year mate.\
 I am retiring in 15 years.
 
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
 **ANSWER**\
-
 class Person {
     
     String name;
@@ -137,9 +139,10 @@ public class Tutorial1 {\
         System.out.println(person2.calculateYearsToRetirement());
         
     }
-}
+}\
+◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
 
-### Question 4
+## Question 4
 The following is something we have not covered in the lecture. But it should be doable for you to figure it out. Similarly, you are given the main() method codes and some output. Figure out the complementary class to build the code and display the correct output. 
 Tips: look into method parameters or passing of arguments as method parameters. You can ask Lecturer and Demo to explain if you don't understand.
 
@@ -160,7 +163,6 @@ public class Tutorial2 {
 }
 
 Output:\
-
 Hi, I am Sam.\
 Jumping 7cm 1 time!\
 Jumping 7cm 2 time!\
