@@ -90,6 +90,7 @@ I am Katy Perry, 45 years old this year mate.\
 I am retiring in 15 years.
 
 **ANSWER**\
+
 class Person {
     
     String name;
@@ -137,3 +138,33 @@ public class Tutorial1 {\
         
     }
 }
+
+### Question 4
+The following is something we have not covered in the lecture. But it should be doable for you to figure it out. Similarly, you are given the main() method codes and some output. Figure out the complementary class to build the code and display the correct output. 
+Tips: look into method parameters or passing of arguments as method parameters. You can ask Lecturer and Demo to explain if you don't understand.
+
+public class Tutorial2 {
+
+	public static void main(String[] args){
+
+	Frog sam = new Frog();
+
+	sam.speak("Hi, I am Sam");
+	sam.jump(7);
+	sam.move("West", 5.5);
+	
+	String greeting = "Good morning!";
+	sam.speak(greeting);
+	
+	}
+}
+
+Output:\
+
+Hi, I am Sam.\
+Jumping 7cm 1 time!\
+Jumping 7cm 2 time!\
+Jumping 7cm 3 time!\
+Moving 5.5 meters in the West direction.\
+Good morning!
+
