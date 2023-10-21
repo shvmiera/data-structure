@@ -170,3 +170,24 @@ Jumping 7cm 3 time!\
 Moving 5.5 meters in the West direction.\
 Good morning!
 
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
+**ANSWER**\
+class Frog {
+        
+    public void speak (String speak) {
+        System.out.println(speak);
+    }
+    
+    public void jump (int jump) {
+        for (int i = 0; i < 3; i++) {
+            int j = i + 1;
+            System.out.println("Jumping " + jump + "cm " + j + " time!");
+        }
+    }
+    
+    public void move (String direction, double meters) {
+        System.out.println("Moving " + meters + " meters in the " + direction + " direction.");
+    }
+    
+}\
+◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
