@@ -403,3 +403,7 @@ public class Register {
 }\
 ◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
 
+## Question 3
+**Task 3 : Registering students using multiple 'unchained' constructors.**
+a) There are some new additions to the list below. As you can see, this time, the information is incomplete. Therefore, create multiple constructors to initialise different objects with different info.
+
