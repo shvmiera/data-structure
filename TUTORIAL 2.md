@@ -11,3 +11,25 @@ You are a new programmer working at the faculty. As your first job, you are give
 
 **Task 1 : Registering students with setMethods.**\
 a) Create one class, 'Student', with variables matching the list's attributes. Your class should have to get and set methods for each attribute (Eg. setName, getName, setMatricId, getMatricId). Ensure suitable data types and access (public, private) are used. 
+
+class Student{
+
+	String name;
+	setName(){
+ 
+  }
+  
+	getName(){
+	}	
+ 
+}
+
+public class Register {
+
+    public static void main(String[] args) {
+        
+		student alexaObj = new alexa();
+		alexaObj.setName();
+		System.out.println(alexaObj.getName());
+}
+
