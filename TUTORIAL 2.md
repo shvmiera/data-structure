@@ -301,7 +301,7 @@ public class Register {
 
 b) What is the difference between registering students using task 1 and task 2?
 
-◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥
 
 **ANSWER**
 
@@ -405,5 +405,203 @@ public class Register {
 
 ## Question 3
 **Task 3 : Registering students using multiple 'unchained' constructors.**
+
 a) There are some new additions to the list below. As you can see, this time, the information is incomplete. Therefore, create multiple constructors to initialise different objects with different info.
+
+b) Initializing multiple objects should look like this.
+
+		Student thanosObj = new Student("Thanos");
+		Student ironObj = new Student("Ironman", 1);
+
+c) Your new list should look like this.			   
+				   
+| Name | Matric Id | Year |
+|:----:|:---------:|:----:|
+|Alexa |1007	     |  2		|		 
+|Siri  |5018	     |  4		|		 
+|Omega |2020         |  1		|		 
+|Beta  |2371	     |  4		|	
+|Thanos|             |                  |
+|Ironman|            |  1               |
+
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
+**ANSWER**\
+class Student {
+	
+    String name;
+    int MatricId, year;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMatricId() {
+        return MatricId;
+    }
+
+    public void setMatricId(int MatricId) {
+        this.MatricId = MatricId;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public Student3 (String name) {
+        this.name = name;
+    }
+    
+    public Student3 (String name, int year) {
+        this.name = name;
+        this.year = year;
+    }
+    
+    public Student3 (String name, int MatricId, int year) {
+        this.name = name;
+        this.MatricId = MatricId;
+        this.year = year;
+    } 
+    
+            
+    public void showInfo() {
+	System.out.println(name + "\t\t  " + MatricId + "\t\t\t " + year);	
+    }
+    
+}
+
+public class Register {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Name\t\tMatric ID\t\tYear");
+        
+	Student alexaObj = new Student ("Alexa", 1007, 2);
+	Student siriObj = new Student ("Siri", 5018, 4);
+        Student omegaObj = new Student ("Omega", 2019, 1);
+        Student betaObj = new Student ("Beta", 2371, 3);
+        Student thanosObj = new Student ("Thanos");
+	Student ironObj = new Student ("Ironman", 1);
+
+        alexaObj.showInfo();
+        siriObj.showInfo();
+        omegaObj.showInfo();
+        betaObj.showInfo();
+        thanosObj.showInfo();
+        ironObj.showInfo();
+        
+    }
+}\
+◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
+
+## Question 4
+**Task 4 : Registering students using multiple 'chained' constructors (overloading constructors).**
+
+a) From Task 3, as you can see, because no values have been assigned to Thanos in your output the year is automatically set to 0. If no information is given, we want to set name = "No name", id = 9999, year = 1. Use multiple 'chained' constructors to do this. Your output should be as below. Note that we need to register a new student we don't know anything about yet (no name, matric id unknown, year also unknown) to give allocation to the faculty. Remember to follow the rules of the constructor (this(), call a more complex constructor etc..).
+
+| Name | Matric Id | Year |
+|:----:|:---------:|:----:|
+|Alexa |1007	     |  2		|		 
+|Siri  |5018	     |  4		|		 
+|Omega |2020         |  1		|		 
+|Beta  |2371	     |  4		|	
+|Thanos|9999         |  1               |
+|Ironman|2012        |  1               |
+|No Name|9999        |  1               |
+
+b) Objects are instantiated as 
+
+	Student thanosObj = new Student("Thanos");
+	Student ironManObj = new Student("Ironman", 1);
+	Student noNameObj = new Student();
+
+◤━━━━━━━━━━━━━━━━━━━━━━━━━━◥\
+**ANSWER**\
+class Student {
+    
+    String name;
+    int MatricId, year;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMatricId() {
+        return MatricId;
+    }
+
+    public void setMatricId(int MatricId) {
+        this.MatricId = MatricId;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+    
+    public Student () {
+        this ("No Name"); // calling constructor (String name)
+    }
+
+    public Student (String name) {
+        this (name, 9999); // calling constructor (String name, int MatricId)
+    }
+    
+    public Student (String name, int MatricId) {
+        this (name, MatricId, 1); // calling constructor (String name, int MatricId, int year)
+    }
+    
+    public Student (String name, int MatricId, int year) {
+        this.name = name;
+        this.MatricId = MatricId;
+        this.year = year;
+    } 
+    
+            
+    public void showInfo() {
+	System.out.println(name + "\t\t  " + MatricId + "\t\t\t " + year);	
+    }
+    
+}
+
+public class Register {
+    
+    public static void main(String[] args) {
+        
+        System.out.println("Name\t\tMatric ID\t\tYear");
+        
+	Student alexaObj = new Student ("Alexa", 1007, 2);
+	Student siriObj = new Student ("Siri", 5018, 4);
+        Student omegaObj = new Student ("Omega", 2019, 1);
+        Student betaObj = new Student ("Beta", 2371, 3);
+        Student thanosObj = new Student ("Thanos");
+	Student ironObj = new Student ("Ironman", 2012);
+        Student noNameObj = new Student ();
+        
+
+        alexaObj.showInfo();
+        siriObj.showInfo();
+        omegaObj.showInfo();
+        betaObj.showInfo();
+        thanosObj.showInfo();
+        ironObj.showInfo();
+        noNameObj.showInfo();
+    }
+}\
+◣━━━━━━━━━━━━━━━━━━━━━━━━━━◢
+
 
